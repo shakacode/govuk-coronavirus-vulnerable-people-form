@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   get "/privacy", to: "coronavirus_form/privacy#show"
 
+  get "/session-expired", to: "coronavirus_form/session_expired#show"
+
   # (v4[sunday]) Question 1: Do you live in England?
   get "/live-in-england", to: "coronavirus_form/live_in_england#show"
   post "/live-in-england", to: "coronavirus_form/live_in_england#submit"
